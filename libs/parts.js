@@ -155,7 +155,7 @@ exports.extractCSS = function(paths) {
       ]
     },
     plugins: [
-      new ExtractTextPlugin('[name].[chunkhash].css')
+      new ExtractTextPlugin('/assets/css/[name].[chunkhash].css')
     ]
   };
 };
@@ -244,7 +244,7 @@ exports.setupFonts = function(paths) {
       loaders: [
         {
           test: /\.(eot|svg|ttf|woff|woff2)$/,
-          loader: 'file?name=[path][name].[hash].[ext]',
+          loader: 'file?name=[path][name].[hash].[ext]&context=./app',
           include: paths
         }
       ]
