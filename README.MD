@@ -1,6 +1,6 @@
 # WAQ Starter
 
-Minimalist starter to run local server to work with React, css-module.
+Minimalist starter to run local server to work with React.
 
 ## Installation
 
