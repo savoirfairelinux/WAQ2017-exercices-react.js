@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 
 /**
  * devServer
@@ -50,9 +49,6 @@ exports.devServer = function(options) {
            include: paths
          }
        ]
-     },
-     postcss: function () {
-        return [autoprefixer({ browsers: ['last 3 versions'] })];
      }
    };
  };
