@@ -43,7 +43,7 @@ switch (process.env.npm_lifecycle_event) {
       plugins: [
         new HtmlWebpackPlugin({
           template: PATHS.template,
-          title: 'Webpack Demo'
+          title: 'React & WAQ'
         }),
         new copyWebpackPlugin([
           {from: './app/assets/images', to: './assets/images'}
@@ -74,7 +74,7 @@ switch (process.env.npm_lifecycle_event) {
         plugins: [
           new HtmlWebpackPlugin({
             template: PATHS.template,
-            title: 'Webpack Demo',
+            title: 'React & WAQ',
             devMode: true
           })
         ],

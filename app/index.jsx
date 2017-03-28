@@ -11,28 +11,36 @@ import {
   Link
 } from 'react-router-dom';
 
-
-const entryPoint = () => (
-  <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/1">Composant</Link></li>
-        <li><Link to="/2">Props</Link></li>
-        <li><Link to="/3">PropsType</Link></li>
-        <li><Link to="/4">PropsChildren</Link></li>
-      </ul>
-
-      <Route exact path="/" component={App}/>
-      <Route path="/1" component={ex1}/>
-      <Route path="/2" component={ex2}/>
-      <Route path="/3" component={ex3}/>
-      <Route path="/4" component={ex4}/>
-    </div>
-  </Router>
-);
-
 // Il faudrait qu'on mount dans le DOM notre composant App
 // Le point de montage est l'ID root.
 const node = document.querySelector('#root');
-ReactDOM.render(<entryPoint />, node);
+ReactDOM.render((
+  <Router>
+    <div>
+      <nav className="navbar navbar-default navbar-static-top">
+        <div className="container">
+          <div className="navbar-header">
+            <a className="navbar-brand" href="/">React &amp; WAQ</a>
+          </div>
+          <div id="navbar" className="navbar-collapse collapse">
+            <ul className="nav navbar-nav">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/1">Composant</Link></li>
+              <li><Link to="/2">Props</Link></li>
+              <li><Link to="/3">PropsType</Link></li>
+              <li><Link to="/4">PropsChildren</Link></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div className="container">
+        <Route exact path="/" component={App}/>
+        <Route path="/1" component={ex1}/>
+        <Route path="/2" component={ex2}/>
+        <Route path="/3" component={ex3}/>
+        <Route path="/4" component={ex4}/>
+      </div>
+    </div>
+  </Router>
+), node);

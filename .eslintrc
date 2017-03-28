@@ -5,13 +5,13 @@
     "node": true
   },
   "parserOptions": {
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "modules": true,
-            "spread" : true,
-            "jsx": true,
-            "restParams" : true
-        }
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "spread" : true,
+      "jsx": true,
+      "restParams" : true
+    }
   },
   "rules": {
     "array-bracket-spacing": [2, "never"],
