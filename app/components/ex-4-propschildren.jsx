@@ -14,7 +14,7 @@ class App extends React.Component {
 class FirstComponent extends React.Component {
   render() {
     return (
-      <div>
+      <div className="panel panel-primary">
         {this.props.children}
       </div>
     );
@@ -24,7 +24,7 @@ class FirstComponent extends React.Component {
 class SecondComponent extends React.Component {
   render(){
     return (
-        <p>Content of SecondComponent</p>
+        <p className="alert alert-success" >Content of SecondComponent</p>
     );
   }
 }
@@ -32,7 +32,7 @@ class SecondComponent extends React.Component {
 class ThirdComponent extends React.Component {
   render() {
     return (
-      <p>Third Component</p>
+      <p className="alert alert-info" >Third Component</p>
     );
   }
 }
