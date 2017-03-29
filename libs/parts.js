@@ -214,8 +214,7 @@ exports.setupImage = function(paths) {
         {
           test: /\.(jpg|png|gif|jpeg)$/,
           loaders: [
-            'file?name=[path][name].[hash].[ext]&context=./app',
-            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            'file?name=[path][name].[hash].[ext]&context=./app'
           ],
           include: paths
         },
