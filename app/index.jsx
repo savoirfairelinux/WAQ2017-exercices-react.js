@@ -8,6 +8,7 @@ import ex4 from './components/ex-4-propschildren.jsx';
 import ex5 from './components/ex-5-counter.jsx';
 import ex6 from './components/ex-6-lifecycle.jsx';
 import ex8 from './components/ex-8-ref.jsx';
+import ex9 from './components/ex-9-stateless.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -35,6 +36,7 @@ ReactDOM.render((
               <li><Link to="/5">5 Counter</Link></li>
               <li><Link to="/6">6 Lifecycle</Link></li>
               <li><Link to="/8">8 Ref</Link></li>
+              <li><Link to="/9">9 Stateless</Link></li>
             </ul>
           </div>
         </div>
@@ -49,6 +51,7 @@ ReactDOM.render((
         <Route path="/5" component={ex5}/>
         <Route path="/6" component={ex6}/>
         <Route path="/8" component={ex8}/>
+        <Route path="/9" component={ex9}/>
       </div>
     </div>
   </Router>
