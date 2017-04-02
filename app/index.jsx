@@ -10,6 +10,7 @@ import ex6 from './components/ex-6-lifecycle.jsx';
 import ex8 from './components/ex-8-stateless.jsx';
 import ex9 from './components/ex-9-statefull.jsx';
 import ex10 from './components/ex-10-ref.jsx';
+import ex11 from './components/cheese/app.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -39,6 +40,7 @@ ReactDOM.render((
               <li><Link to="/8">8 Stateless</Link></li>
               <li><Link to="/9">9 Statefull</Link></li>
               <li><Link to="/10">10 Ref</Link></li>
+              <li><Link to="/11">11 Fromagerie</Link></li>
             </ul>
           </div>
         </div>
@@ -55,6 +57,7 @@ ReactDOM.render((
         <Route path="/8" component={ex8}/>
         <Route path="/9" component={ex9}/>
         <Route path="/10" component={ex10}/>
+        <Route path="/11" component={ex11}/>
       </div>
     </div>
   </Router>
