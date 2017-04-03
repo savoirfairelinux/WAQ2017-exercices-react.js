@@ -12,18 +12,18 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <div className="item">
-        <div className="item__inner">
-          <div className="item__image">
+      <div className="col-sm-6 col-md-4">
+        <div className="thumbnail">
             <img src={this.data.image} />
+          <div className="caption">
+            <h4 >{this.data.name}</h4>
+            <p>
+              {this.data.content}
+            </p>
+            <button
+              className="btn btn-primary"
+              onClick={this._addToCart.bind(this, this.data)}>Ajouter au panier</button>
           </div>
-          <h4 className="item__title">{this.data.name}</h4>
-          <p className="item__description">
-            {this.data.content}
-          </p>
-          <button
-            className="item__button"
-            onClick={this._addToCart.bind(this, this.data)}>Ajouter au panier</button>
         </div>
       </div>
     )

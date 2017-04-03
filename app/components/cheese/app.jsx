@@ -12,18 +12,6 @@ class App extends React.Component {
     };
   }
   _addToCart(item) {
-    // La function addToCart prend en paramètre le nouvel item que nous voulons
-    // ajouter. Dans son usage on veut pouvoir :
-    // - Vérifier que le tableau 'cart' ne possède pas déjà l'item que nous voulons ajouter.
-    // - Si le tableau 'cart' ne le possède pas on va assigner à 'cart' un nouveau
-    // tableau qui sera le résultat de la concaténation de 'cart' et de 'item'.
-    // - Nous voulons également filtrer le tableau 'data' pour enlever le nouvel 'item'
-    // qui vient d'être ajouté au panier.
-    //
-    // Note: pour assigner une valeur en état nous devons utiliser la méthode
-    // this.setState.
-    // Dans cet exercice vous devez utiliser les méthodes: includes, concat et filter
-    // de JavaScript.
     if (!this.state.cart.includes(item)) {
       this.setState({
         cart: [].concat(this.state.cart, item)
@@ -36,12 +24,6 @@ class App extends React.Component {
     }
   }
   _removeFromCart(item) {
-    // La function removeFromCart prend en paramètre l'item que nous voulons supprimer.
-    // À l'inverse de addToCart cette fois-ci nous voulons supprimer de 'cart'
-    // l'item passé en paramètre et ajouter à 'data' l'item que nous voulons supprimer du panier.
-    //
-    // PS: Dans cet exercice vous devez utiliser les méthodes: filter et concat.
-
     this.setState({
       cart: this.state.cart.filter( (c) => {
         return c.id !== item.id;
@@ -54,18 +36,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <header className="header">
-          <h1 className="header__title">
-            Ma fromagerie
-            <span className="header__catchline">Meilleure fromage en ville</span>
+        <header className="page-header">
+          <h1>
+            Ma fromagerie <small>Meilleure fromage en ville</small>
           </h1>
         </header>
 
-        <main className="main">
+        <main className="row">
           {/* Ici nous devons passer en props data et _addToCart*/}
-          <Items data={this.state.data} addToCart={this._addToCart.bind(this)} />
+          <Items data={this.state.data} cssClass="col-sm-6 col-md-8" addToCart={this._addToCart.bind(this)} />
           {/* Ici nous devons passer en props cart et _removeFromCart*/}
-          <Cart data={this.state.cart} removeFromCart={this._removeFromCart.bind(this)} />
+          <Cart data={this.state.cart} cssClass="col-sm-6 col-md-4" removeFromCart={this._removeFromCart.bind(this)} />
         </main>
       </div>
     );

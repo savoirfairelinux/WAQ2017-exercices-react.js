@@ -10,14 +10,18 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <div className="cart__item">
-        <div className="cart__item-image">
-          <img src={this.props.data.image} />
+      <div className="media">
+        <div className="media-left media-middle">
+          <img width="50" src={this.props.data.image} />
         </div>
-        <h4 className="cart__item-title">{this.props.data.name}</h4>
-        <button
-          onClick={this.props.removeFromCart.bind(this, this.props.data)}
-          className="cart__item-remove">X</button>
+        <div className="media-body">
+          <h4>{this.props.data.name}</h4>
+        </div>
+        <div className="media-right media-middle">
+          <button
+            onClick={this.props.removeFromCart.bind(this, this.props.data)}
+            className="btn btn-danger pull-right">X</button>
+        </div>
       </div>
     )
   }

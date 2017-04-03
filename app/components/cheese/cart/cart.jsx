@@ -5,6 +5,7 @@ import ItemCount from '../itemCount/itemCount.jsx';
 export default class extends React.Component {
   static propTypes = {
     data: React.PropTypes.array.isRequired,
+    cssClass: React.PropTypes.string,
     removeFromCart: React.PropTypes.func.isRequired
   }
   constructor(props) {
@@ -20,13 +21,17 @@ export default class extends React.Component {
       return <Item key={item.id} data={item} removeFromCart={this.props.removeFromCart} />
     });
     return (
-      <div className="cart">
-        <div className="cart__inner">
-          <h4 className="cart__title">
-            Mon panier
-            <ItemCount count={this.props.data.length} className="cart__count" />
-          </h4>
-          {this.props.data.length > 0 ? items : 'Votre pannier est vide'}
+      <div className={this.props.cssClass}>
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h4>
+              Mon panier
+              <ItemCount count={this.props.data.length} className="label label-info pull-right" />
+            </h4>
+          </div>
+          <div className="panel-body">
+            {this.props.data.length > 0 ? items : 'Votre pannier est vide'}
+          </div>
         </div>
       </div>
     );
