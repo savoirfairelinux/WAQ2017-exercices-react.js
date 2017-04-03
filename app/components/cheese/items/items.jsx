@@ -19,7 +19,7 @@ export default class extends React.Component {
             <ItemCount count={this.props.data.length} className="lead" />
           </div>
           <div className="panel-body">
-            <div className="row">
+            <div className="row" style={{display:'flex', flexWrap:'wrap'}}>
               {this.props.data.length > 0 ? items : 'Pas de produit à afficher'}
             </div>
           </div>

@@ -8,13 +8,13 @@ export const cheeses = [
       {
         "id": "814ef339-1491-420c-9a96-acca6e488b48",
         "name": "Appenzeller",
-        "content": "Ce Gruyère de Suisse alémanique dévoile à un an d'affinage un goût très raffiné. En effet, il reçoit des soins particuliers : des brossages hebdomadaires avec une saumure à base de plantes appelée Sulz, dont la recette est gardée secrète (mais dont on vous dévoile une partie de la composition : sel, levure, vin blanc, poivre et un mélange d'une vingtaine à une quarantaine de plantes). Seules deux personnes par génération connaissent la recette et peuvent accéder au coffre de banque où elle est gardée. L'Appenzeller présente une pâte très dense parsemée d'yeux, et un goût relevé et franc.",
+        "content": "Ce Gruyère de Suisse alémanique dévoile à un an d'affinage un goût très raffiné. En effet, il reçoit des soins particuliers : des brossages hebdomadaires avec une saumure à base de plantes appelée Sulz, dont la recette est gardée secrète (mais dont on vous dévoile une partie de la composition : sel, levure, vin blanc, poivre et un mélange d'une vingtaine à une quarantaine de plantes).",
         "image": "/assets/images/appenzeller.jpg"
       },
       {
         "id": "10e1fa46-7a35-4d02-81e2-97f2f95d5b08",
         "name": "Beaufort",
-        "content": "Le Beaufort Chalets d'Alpages est un gruyère exceptionnel. C'est une pâte pressée cuite au lait de vache fabriquée dans le Beaufortin. On reconnaît très facilement une meule de Beaufort (sa production nécessite plus de 400 litres de lait) par son talon concave. Il offre une pâte jaune et fondante, bien grasse, cristallisée et pleine de saveur. Ce Beaufort est exclusivement fabriqué avec les laits des hauts alpages de Savoie, rédigé comme suit dans le cahier des charges de l'AOP : « productions estivales, fabriquées selon les méthodes traditionnelles deux fois par jour, en chalet d'alpage au-dessus de 1500m d'altitude, comportant tout au plus la production laitière d'un seul troupeau dans le chalet ». C'est tout au long de l'automne que l'on déguste à sa plénitude la Rolls-Royce des gruyères.",
+        "content": "Le Beaufort Chalets d'Alpages est un gruyère exceptionnel. C'est une pâte pressée cuite au lait de vache fabriquée dans le Beaufortin. On reconnaît très facilement une meule de Beaufort (sa production nécessite plus de 400 litres de lait) par son talon concave. Il offre une pâte jaune et fondante, bien grasse, cristallisée et pleine de saveur.",
         "image": "/assets/images/beaufort.jpg"
       },
       {
