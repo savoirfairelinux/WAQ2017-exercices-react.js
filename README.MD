@@ -10,3 +10,9 @@ Minimalist starter to run local server to work with React.
 * Run `$ npm install` to install dependencies
 * Run local server with `$ npm run start`
 * Build app with `$ npm run build`
+
+
+## Exercice
+
+* Suivez les TODO et faites fonctionner l'application de la meilleur fromagerie en ville!
+* Solution dans la branche `demo-et-solution`
