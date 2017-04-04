@@ -12,14 +12,15 @@ export default class extends React.Component {
     super(props);
   }
   render() {
-    // Ici il faut itérer sur le tableau data et retourner le composant
+    // TODO
+    // Créer un variable nomé 'items'
+    // Il faut itérer sur le tableau data et retourner le composant
     // Item avec trois props:
     // key: qui doit être une String unique
     // data: qui doit être l'objet du tableau actuellement itéré
     // removeFromCart: qui doit être la fonction qui supprimer un item du panier
-    const items = this.props.data.map( (item) => {
-      return <Item key={item.id} data={item} removeFromCart={this.props.removeFromCart} />
-    });
+    // Tips: Regarder le composant items.jsx
+
     return (
       <div className={this.props.cssClass}>
         <div className="panel panel-default">
@@ -30,7 +31,7 @@ export default class extends React.Component {
             </h4>
           </div>
           <div className="panel-body">
-            {this.props.data.length > 0 ? items : 'Votre pannier est vide'}
+            {/* TODO Afficher les items ou le message 'Votre pannier est vide' si le tableau est vide */}
           </div>
         </div>
       </div>

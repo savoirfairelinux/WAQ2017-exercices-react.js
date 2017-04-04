@@ -1,5 +1,5 @@
 import React from 'react';
-import {cheeses} from '../fixtures/cheeses';
+import {cheeses} from '../fixtures/cheeses'; // On importe les données
 import Items from './items/items.jsx';
 import Cart from './cart/cart.jsx';
 
@@ -24,14 +24,10 @@ class App extends React.Component {
     }
   }
   _removeFromCart(item) {
-    this.setState({
-      cart: this.state.cart.filter( (c) => {
-        return c.id !== item.id;
-      })
-    });
-    this.setState({
-      data: [].concat(this.state.data, item)
-    });
+    // TODO
+    // Comme _addToCart, mais on inverse:
+    // - Retirer du cart l'item en paramètre
+    // - Ajouter l'item en paramètre à data
   }
   render() {
     return (
@@ -43,10 +39,10 @@ class App extends React.Component {
         </header>
 
         <main className="row">
-          {/* Ici nous devons passer en props data et _addToCart*/}
+          {/* Ici nous passons en props data et _addToCart*/}
           <Items data={this.state.data} cssClass="col-sm-6 col-md-8" addToCart={this._addToCart.bind(this)} />
-          {/* Ici nous devons passer en props cart et _removeFromCart*/}
-          <Cart data={this.state.cart} cssClass="col-sm-6 col-md-4" removeFromCart={this._removeFromCart.bind(this)} />
+          {/* TODO Passez en props cart et _removeFromCart*/}
+          <Cart cssClass="col-sm-6 col-md-4" />
         </main>
       </div>
     );

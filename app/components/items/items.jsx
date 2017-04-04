@@ -10,13 +10,15 @@ export default class extends React.Component {
   }
   render() {
     const items = this.props.data.map( (item) => {
-      return <Item key={item.id} data={item} addToCart={this.props.addToCart} />
+      {/* TODO Passer en props la fonction addToCart et l'item */}
+      return <Item key={item.id} />
     });
     return (
       <div className={this.props.cssClass}>
         <div className="panel panel-info">
           <div className="panel-heading">
-            <ItemCount count={this.props.data.length} className="lead" />
+            {/* TODO Passer en props la taille de l'array data */}
+            <ItemCount className="lead" />
           </div>
           <div className="panel-body">
             <div className="row" style={{display:'flex', flexWrap:'wrap'}}>

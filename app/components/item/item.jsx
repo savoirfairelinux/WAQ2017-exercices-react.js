@@ -16,9 +16,9 @@ export default class extends React.Component {
         <div className="thumbnail">
             <img src={this.data.image} />
           <div className="caption">
-            <h4 >{this.data.name}</h4>
+            <h4>{/* TODO Afficher le nom du délicieux formage */}</h4>
             <p>
-              {this.data.content}
+              {/* TODO Afficher la description du délicieux formage */}
             </p>
             <button
               className="btn btn-primary"

@@ -18,8 +18,8 @@ export default class extends React.Component {
           <h4>{this.props.data.name}</h4>
         </div>
         <div className="media-right media-middle">
+          {/* TODO Ajouter un event listner au click  du bouton pour suprimer cet item du cart */}
           <button
-            onClick={this.props.removeFromCart.bind(this, this.props.data)}
             className="btn btn-danger pull-right">X</button>
         </div>
       </div>
