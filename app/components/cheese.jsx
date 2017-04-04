@@ -1,5 +1,5 @@
 import React from 'react';
-import {cheeses} from '../../fixtures/cheeses';
+import {cheeses} from '../fixtures/cheeses';
 import Items from './items/items.jsx';
 import Cart from './cart/cart.jsx';
 
