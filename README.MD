@@ -15,4 +15,4 @@ Minimalist starter to run local server to work with React.
 ## Exercice
 
 * Suivez les TODO et faites fonctionner l'application de la meilleur fromagerie en ville!
-* Solution dans la branche `demo-et-solution`
+* Solution dans la branche `exercice-solution`
