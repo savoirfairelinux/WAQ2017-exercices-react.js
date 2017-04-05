@@ -5,7 +5,7 @@ import ItemCount from './itemCount.jsx';
 export default class extends React.Component {
   static propTypes = {
     data: React.PropTypes.array.isRequired,
-    cssClass: React.PropTypes.string,
+    className: React.PropTypes.string,
     addToCart: React.PropTypes.func.isRequired
   }
   render() {
