@@ -11,21 +11,33 @@ export default class extends React.Component {
     super(props);
   }
   render() {
-    // Ici il faut itérer sur le tableau data et retourner le composant
-    // Item avec trois props:
+    // TODO:
+    // Dans l'assignation 'const items = [];',
+    // Itérer avec la fonction 'map' sur le tableau data (passé en 'props' depuis le compsant parent).
+    // A chaque itération, retournez le composant 'CartItem'.
+    // Puis passé lui en propriété (props):
     // key: qui doit être une String unique
     // data: qui doit être l'objet du tableau actuellement itéré
-    // removeFromCart: qui doit être la fonction qui supprimer un item du panier
-    const items = this.props.data.map( (item) => {
-      return <CartItem key={item.id} data={item} removeFromCart={this.props.removeFromCart} />
-    });
+    // removeFromCart: qui doit être la fonction qui va supprimer un item du panier
+    //
+    // PS: Pour rappel, voici la fonction 'map'
+    // const mesDatas = monArray.map((maValeur) => {
+    //  return <MonComposant />
+    // });
+    const items = [];
     return (
       <div className={this.props.className}>
         <div className="panel panel-default">
           <div className="panel-heading">
             <h4>
               Mon panier
-              <ItemCount count={this.props.data.length} className="label label-info pull-right" />
+              {/* TODO
+                1 - Assigner un 'props' nommé 'count' au composant 'ItemCount'
+                2 - La valeur du 'props' 'count' doit être égale à la taille
+                du tableau 'data' disponible dans les 'props' du composant.
+              */}
+              <ItemCount
+                className="label label-info pull-right" />
             </h4>
           </div>
           <div className="panel-body">
