@@ -35,8 +35,6 @@ class App extends React.Component {
   }
   render() {
     return (
-      
-
         <main className="row">
           {/* Ici nous devons passer en props data et _addToCart*/}
           <Products data={this.state.data} className="col-sm-6 col-md-8" addToCart={this._addToCart.bind(this)} />
