@@ -6755,3 +6755,9 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* custom */
+li.link-wrapper > a.active {
+    color: #fff;
+    background-color: #337ab7;
+}
