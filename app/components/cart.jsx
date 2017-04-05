@@ -16,7 +16,7 @@ export default class extends React.Component {
     // Itérer avec la fonction 'map' sur le tableau data (passé en 'props' depuis le compsant parent).
     // A chaque itération, retournez le composant 'CartItem'.
     // Puis passé lui en propriété (props):
-    // key: qui doit être une String unique
+    // key: qui doit être une String unique égale à l'id de l'objet data
     // data: qui doit être l'objet du tableau actuellement itéré
     // removeFromCart: qui doit être la fonction qui va supprimer un item du panier
     //
