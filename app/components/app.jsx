@@ -14,9 +14,7 @@ class App extends React.Component {
   _addToCart(item) {
     if (!this.state.cart.includes(item)) {
       this.setState({
-        cart: [].concat(this.state.cart, item)
-      });
-      this.setState({
+        cart: [].concat(this.state.cart, item),
         data: this.state.data.filter( (c) => {
           return c.id !== item.id;
         })
@@ -27,9 +25,7 @@ class App extends React.Component {
     this.setState({
       cart: this.state.cart.filter( (c) => {
         return c.id !== item.id;
-      })
-    });
-    this.setState({
+      }),
       data: [].concat(this.state.data, item)
     });
   }
