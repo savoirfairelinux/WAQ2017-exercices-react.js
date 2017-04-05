@@ -36,7 +36,7 @@
     "react-dom": "^15.3.0"
   },
   "repository": {
-    "url": "https://github.com/Tonours/webpack-minimalist-starter.git",
+    "url": "https://github.com/savoirfairelinux/WAQ2017-exercices-react.js.git",
     "type": "git"
   }
 }

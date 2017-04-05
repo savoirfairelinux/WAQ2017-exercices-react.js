@@ -12,13 +12,25 @@ export default class extends React.Component {
   }
   render() {
     return (
+      // TODO
+      //  En vous basant sur la structure d'objet ci-dessous:
+      //  {
+      //    name: String,
+      //    image: String,
+      //    content: String
+      //  }
+      //  Afficher:
+      //  1 - le 'image' dans notre attribut 'src' de la balise '<img>'
+      //  2 - le 'name' dans notre '<h4>'
+      //  3 - le 'content' dans notre '<p>'
+      //  Note: nos 'data' sont disponible dans 'this.data'
       <div className="col-sm-6 col-md-4">
         <div className="thumbnail">
-            <img src={this.data.image} />
+            <img src={/* a remplacer (1)*/} />
           <div className="caption">
-            <h4>{/* TODO Afficher le nom du délicieux formage */}</h4>
+            <h4>{/* a remplacer (2)*/}</h4>
             <p>
-              {/* TODO Afficher la description du délicieux formage */}
+              {/* a remplacer (3)*/}
             </p>
             <button
               className="btn btn-primary"

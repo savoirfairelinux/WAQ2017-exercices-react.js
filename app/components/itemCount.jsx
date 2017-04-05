@@ -9,7 +9,7 @@ const ItemCount = ({count, className}) => {
   };
   return (
     <span className={className}>
-      {count} {/* TODO Utiliser le fonction displayCount pour afficher le mot produit */}
+      {count} {displayCount(count)}
     </span>
   );
 };
@@ -17,6 +17,6 @@ const ItemCount = ({count, className}) => {
 ItemCount.propTypes = {
   className: React.PropTypes.string.isRequired,
   count: React.PropTypes.number.isRequired
-};
+}
 
 export default ItemCount;
